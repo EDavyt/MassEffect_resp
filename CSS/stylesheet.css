@@ -1,0 +1,118 @@
+/* 
+Prioritizing mobile
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400;700&display=swap');
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+/* 
+Header styles
+*/
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.Pitch{
+    display: flex;
+    padding: 2px;
+    background-color:  #ffb84d;
+    text-align: center;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+
+}
+
+.bgTitle{
+    display: flex;
+    background-image: url(../IMG/PhoneTItleBacground.webp);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 42px);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+}
+
+.HeaderbuttonsContainer{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color:transparent;
+}
+
+.HeaderButtons{
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 15px;
+}
+/* Fin del header */
+/* Comienzo del main Section */
+
+/*Barra de navegaion*/
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    background-color: black;
+    list-style-type: none;
+}
+
+/*Seccion principal*/
+/*Cartas*/
+
+.CardContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex-wrap: wrap;
+
+    
+}
+
+.Card{
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    height: 75vh;
+    width: calc(100vw - 20px);
+    background-color: grey;
+    margin: 5px;
+}
+.bg-Personaje{
+    background-image: url(../IMG/ShepardBG.png);
+    background-size: cover;
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.FotoPerfil{
+    position: relative;
+    width: 185px;
+    height: 185px;
+    top: 50%;
+}
+
+
+/* Comienzo footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    color: azure;
+    justify-content: space-between;
+    padding: 10px;
+}
