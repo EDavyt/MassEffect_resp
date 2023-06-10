@@ -5,6 +5,7 @@ Prioritizing mobile
 *{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 /* 
 Header styles
@@ -71,39 +72,49 @@ nav ul{
 
 /*Seccion principal*/
 /*Cartas*/
-
 .CardContainer{
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-style: dashed;
+    height: 75vh;
+    
+    
+}
+.ProfilePic{
+    width: 185px;
+    height: 185px;
+    border-radius: 500px;
+}
 
+.PjText{
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.PjText p{
+    position: relative;
+    top: 25%;
+}
+
+/*bacgorunds*/
+.bgSheppard{
+    background-color:  #e6ccb3    ;
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
     
 }
 
-.Card{
-    display: flex;
-    box-sizing: border-box;
-    position: relative;
-    height: 75vh;
-    width: calc(100vw - 20px);
-    background-color: grey;
-    margin: 5px;
-}
-.bg-Personaje{
-    background-image: url(../IMG/ShepardBG.png);
-    background-size: cover;
-    position: relative;
-    height: 50%;
-    width: 100%;
-}
-
-.FotoPerfil{
-    position: relative;
-    width: 185px;
-    height: 185px;
-    top: 50%;
-}
 
 
 /* Comienzo footer */
@@ -114,5 +125,46 @@ footer{
     background-color: blueviolet;
     color: azure;
     justify-content: space-between;
+    
     padding: 10px;
+}
+
+
+/*Media Queries*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.CardContainer{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card{
+    width: 47%;
+    margin: 5px;
+    padding: 5px;
+    height: 50vh;
+}
+
+}
+@media (min-width: 1440px) {
+.card{
+    width: 24%;
+    margin: 5px;
+    padding: 5px;
+    height: 40vh;
+}
+.CardContainer{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.bgTitle{
+    display: flex;
+    background-image: url(../IMG/ShepardBg\ 1.png);
+    background-size: cover;
+    background-position: center;
+    height: calc(50vh - 42px);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 }
